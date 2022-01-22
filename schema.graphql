@@ -1,6 +1,6 @@
-type TransferEntity @entity {
-  id: ID! #block height + event id
-  from: String!
-  to: String!
-  amount: BigInt!
+type StakingReward @entity {
+  id: ID! # AccountId / Account Hash
+  address: String!
+  balance: BigInt!
+  date: Date!
 }
