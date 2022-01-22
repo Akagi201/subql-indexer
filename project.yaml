@@ -1,8 +1,8 @@
 specVersion: 0.2.0
-name: subql-starter
+name: subql-indexer
 version: 0.1.0
 description: A subquery stater project
-repository: https://github.com/Akagi201/subql-starter.git
+repository: https://github.com/Akagi201/subql-indexer.git
 schema:
   file: ./schema.graphql
 network:
@@ -11,7 +11,7 @@ network:
   dictionary: 'https://api.subquery.network/sq/subquery/dictionary-polkadot'
 dataSources:
   - kind: substrate/Runtime
-    startBlock: 8542153
+    startBlock: 8546376
     mapping:
       file: ./dist/index.js
       handlers:

@@ -85,13 +85,13 @@ Config postgres and direnv locally first.
 #### Run subql-node
 
 ```bash
-subql-node -f ./ --db-schema=subql-starter --batch-size=200 --log-level=debug
+subql-node -f ./ --db-schema=subql-indexer--batch-size=200 --log-level=debug
 ```
 
 #### Run subl-query
 
 ```bash
-subql-query --name=subql-starter --playground --indexer=http://localhost:3000
+subql-query --name=subql-indexer --playground --indexer=http://localhost:3000
 ```
 
 ### Query the project
@@ -100,7 +100,7 @@ Open your browser and head to `http://localhost:3000`.
 
 Finally, you should see a GraphQL playground is showing in the explorer and the schemas that ready to query.
 
-For the `subql-starter` project, you can try to query with the following code to get a taste of how it works.
+For the `subql-indexer` project, you can try to query with the following code to get a taste of how it works.
 
 ````graphql
 {
